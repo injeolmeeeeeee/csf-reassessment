@@ -1,0 +1,10 @@
+<h1>Orders for {{ email }}</h1>
+
+<ul>
+  <li *ngFor="let order of orderSummary">
+    <p>Order Id: {{ order.orderId }}</p>
+    <p>{{ order.amount | currency: 'SGD' }}</p>
+    
+  </li>
+  <li *ngIf="orderSummary.length === 0">You have not made any orders</li>
+</ul>
