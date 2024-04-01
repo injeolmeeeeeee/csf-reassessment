@@ -20,7 +20,6 @@ import vttp2023.assessment.csf.orderbackend.services.OrderService;
 
 @RequestMapping(path = "/api")
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
 public class OrderRestController {
 
 	@Autowired
